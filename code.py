@@ -20,7 +20,7 @@ for a_range in chunk_ranges:
       # So you have a list of them and can iterate through the list for join to end them nicely. 
   a_proc.start() # Starts one! 
 
-# Waits for them to end and ends them nicely, cleanup. 
+# Waits for them to end and ends them nicely, cleanup. I don't know how this works, it just does. Magic.
 for p in proc_list: 
   p.join()
   print '%s.exitcode = %s' % (p.name, p.exitcode)
